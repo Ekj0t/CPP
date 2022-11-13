@@ -1,6 +1,6 @@
 #include <iostream>
-#include "compare.cpp" // Preprocessor
-#include "operations.cpp"
+#include "compare.h" // Preprocessor
+#include "operations.h"
 
 int main()
 {
