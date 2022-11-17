@@ -15,9 +15,13 @@ int main()
     std::string e{"hello"};
     std::string f{"world"};
 
-    std::cout << "max(int): " << maximum(a, b) << std::endl;    // int
-    std::cout << "max(double): " << maximum(c, d) << std::endl; // double
-    std::cout << "max(string): " << maximum(e, f) << std::endl; // string
+    int *p_x{&a};
+    int *p_y{&b};
+
+    std::cout << "max(int): " << maximum(a, b) << std::endl;          // int
+    std::cout << "max(double): " << maximum(c, d) << std::endl;       // double
+    std::cout << "max(string): " << maximum(e, f) << std::endl;       // string
+    std::cout << "max(string): " << maximum(*p_x, *p_y) << std::endl; // pointer
 
     return 0;
 }
