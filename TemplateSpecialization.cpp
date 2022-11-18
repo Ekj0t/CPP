@@ -8,11 +8,12 @@ T maximum(T a, T b)
 }
 
 template <>
-const char* maximum<const char *>(const char *a, const char *b){
-return(std::strcmp(a, b)> 0)? a:b;
+const char *maximum<const char *>(const char *a, const char *b)
+{
+    return (std::strcmp(a, b) > 0) ? a : b;
 }
 
-    int main()
+int main()
 {
     int a{10};
     int b{23};
